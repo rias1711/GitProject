@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+    <script>
+        function tong() {
+            document.getElementById(n1).value + document.getElementById(n2).value;
+        }
+        function hieu() {
+            document.getElementById(n1).value - document.getElementById(n2).value;
+        }
+    </script>
+</head>
+<body>
+<h1 style="text-align: center">Caculator</h1>
+<form>
+    <input type="text" name="n1" value=" " size="20" id="n1">
+    <input type="text" name="n2" value=" " size="20" id="n2">
+    <br>
+    <br>
+    <button type="button" name="add" onclick="tong()">Addition(+)</button>
+    <button type="button" name="sub" onclick="">Subtraction(-)</button>
+    <button type="button" name="mul" onclick="">Multiplication(x)</button>
+    <button type="button" name="div" onclick="">Division(/)</button>
+</form>
+<p id="result"></p>
+</body>
+</html>
