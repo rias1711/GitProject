@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Luyện tập với cấu trúc switch-case</title>
 </head>
 <body>
-
+<script>
+    let value = parseInt(prompt("Nhập vào một số: "));
+    let po = value > 0;
+    switch (po) {
+        case (true):
+            alert(1);
+            break;
+        case (false):
+            switch (value) {
+                case 0:
+                    alert(0);
+                    break;
+                default:
+                    alert(-1);
+            }
+    }
+</script>
 </body>
 </html>
