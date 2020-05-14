@@ -2,9 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập cấu trúc điều kiện 2</title>
 </head>
 <body>
-$END$
+<h2>Bài 6</h2>
+<!--<script>-->
+<!--    let a = parseInt(prompt('Nhập a:'));-->
+<!--    let b = parseInt(prompt("Nhập b:"));-->
+<!--    let c = -b/a;-->
+<!--    if (a==0) {-->
+<!--        if (b==0) {-->
+<!--            document.write("Phương trình vô số nghiệm")-->
+<!--        } else {-->
+<!--            document.write("Phương trình vô nghiệm")-->
+<!--        }-->
+<!--    } else {-->
+<!--        document.write("Phương trình có nghiệm là " + c)-->
+<!--    }-->
+<!--</script>-->
+<!--<br>-->
+
+<!--<h2>Bài 7</h2>-->
+<!--<script>-->
+<!--    let a = parseInt(prompt("Nhập số a:"));-->
+<!--    let b = parseInt(prompt("Nhập số b:"));-->
+<!--    let c = parseInt(prompt("Nhập số c:"));-->
+<!--    let delta = parseFloat(Math.sqrt(b*b-4*a*c));-->
+<!--    let na = -b/(2*a)-->
+<!--    let n1 = (-b + delta)/(4*a);-->
+<!--    let n2 = (-b - delta)/(4*a);-->
+<!--    if (delta<0) {-->
+<!--        document.write("Phương trình bậc hai vô nghiệm")-->
+<!--    } else if (delta==0) {-->
+<!--        document.write("Phương trình bậc hai có hai nghiệm kép = " + na)-->
+<!--    } else {-->
+<!--        document.write("Phương trình có hai nghiệm phân biệt: " + "x1 = " + n1 + " và " + "x2 = " + n2)-->
+<!--    }-->
+<!--</script>-->
+<br>
+
+<h2>Bài 8</h2>
+<!--<script>-->
+<!--    let age = parseInt(prompt("Nhập vào số tuổi"));-->
+<!--    if (age>0) {-->
+<!--        if (age<120) {-->
+<!--            alert("Đây là tuổi một người")-->
+<!--        } else {-->
+<!--            alert("Sống thọ thế!")-->
+<!--        }-->
+<!--    } else {-->
+<!--        alert("Điền cái gì vậy?")-->
+<!--    }-->
+<!--</script>-->
+<br>
+
+<h2>Bài 9</h2>
+<!--<script>-->
+<!--    let canha = parseInt(prompt("Nhập chiều dài cạnh a"));-->
+<!--    let canhb = parseInt(prompt("Nhập chiều dài cạnh b"));-->
+<!--    let canhc = parseInt(prompt("Nhập chiều dài cạnh c"));-->
+<!--    let dk1 = (canha, canhb, canhc) > 0;-->
+<!--    let dk2 = (canha + canhb) > canhc;-->
+<!--    let dk3 = (canhb + canhc) > canha;-->
+<!--    let dk4 = (canha + canhc) > canhb;-->
+<!--    if (dk1) {-->
+<!--        if (dk2) {-->
+<!--            if (dk3) {-->
+<!--                if (dk4) {-->
+<!--                    alert("Đây là ba cạnh của một tam giác")-->
+<!--                } else {-->
+<!--                    alert("Nhập sai rồi")-->
+<!--                }-->
+<!--            } else {-->
+<!--                alert("Nhập sai rồi")-->
+<!--            }-->
+<!--        } else {-->
+<!--            alert("Nhập sai rồi")-->
+<!--        }-->
+<!--    } else {-->
+<!--        alert("Nhập sai rồi")-->
+<!--    }-->
+<!--</script>-->
+<br>
+
+<h2>Bài 10</h2>
+<!--<script>-->
+<!--    let sokWh = parseInt(prompt("Nhập vào số điện dùng:"))-->
+<!--    let money;-->
+<!--    if (0<sokWh<51) {-->
+<!--        money = sokWh * 1678-->
+<!--    } else if (sokWh<101) {-->
+<!--        money = (sokWh-50)*1734 + 50*1678-->
+<!--    } else if (sokWh<201) {-->
+<!--        money = (sokWh-100)*2014 + 50*1678 + 100*1734-->
+<!--    } else if (sokWh<301) {-->
+<!--        money = (sokWh-200)*2536 + 50*1678 + 100*1734 + 200*2014-->
+<!--    } else if (sokWh<401) {-->
+<!--        money = (sokWh-300)*2834 + 50*1678 + 100*1734 + 200*2014 + 300*2536-->
+<!--    } else {-->
+<!--        money = (sokWh-400)*2927 + 50*1678 + 100*1734 + 200*2014 + 300*2536 + 400*2834-->
+<!--    }-->
+<!--    document.write("Tiền điện tháng này là " + money + " VNĐ");-->
+<!--</script>-->
+<br>
+
+<h2>Bài 11</h2>
+<!--<script>-->
+<!--    let thuNhapTinhThue = parseInt(prompt("Nhập thu nhập tính thuế(triệu đồng)"));-->
+<!--    let thueTNCN;-->
+<!--    if (thuNhapTinhThue<5) {-->
+<!--        thueTNCN = thuNhapTinhThue * 5/100-->
+<!--    } else if (thuNhapTinhThue<10) {-->
+<!--        thueTNCN = 0.25 + (thuNhapTinhThue-5) * 10/100-->
+<!--    } else if (thuNhapTinhThue<18) {-->
+<!--        thueTNCN = 0.75 + (thuNhapTinhThue-10) * 15/100-->
+<!--    } else if (thuNhapTinhThue<32) {-->
+<!--        thueTNCN = 1.95 + (thuNhapTinhThue-18) * 20/100-->
+<!--    } else if (thuNhapTinhThue<52) {-->
+<!--        thueTNCN = 4.75 + (thuNhapTinhThue-32) * 25/100-->
+<!--    } else if (thuNhapTinhThue<80) {-->
+<!--        thueTNCN = 9.75 + (thuNhapTinhThue-52) * 30/100-->
+<!--    } else {-->
+<!--        thueTNCN = 18.15 + (thuNhapTinhThue-80) * 35/100-->
+<!--    }-->
+<!--    document.write("Thuế phải nộp là: " + thueTNCN + " triệu đồng")-->
+<!--</script>-->
+<br>
+
+<h2>Bài 13</h2>
+<!--<script>-->
+<!--    let money = parseInt(prompt("Nhập số tiền muốn gửi ngân hàng (triệu đồng):"));-->
+<!--    let profit;-->
+<!--    let month = parseInt(prompt("Nhập số tháng muốn gửi"));-->
+<!--    let moneyafter;-->
+<!--    switch (month) {-->
+<!--        case 1:-->
+<!--        case 2:-->
+<!--            profit = 4/100;-->
+<!--            break;-->
+<!--        case 3:-->
+<!--        case 4:-->
+<!--        case 5:-->
+<!--            profit = 4.25/100;-->
+<!--            break;-->
+<!--        case 6:-->
+<!--        case 7:-->
+<!--        case 8:-->
+<!--            profit = 5.1/100;-->
+<!--            break;-->
+<!--        case 9:-->
+<!--        case 10:-->
+<!--        case 11:-->
+<!--            profit = 5.2/100;-->
+<!--            break;-->
+<!--        default:-->
+<!--            profit = 6.8/100;-->
+<!--    }-->
+<!--    moneyafter = money + money*month*profit;-->
+<!--    document.write("Số tiền nhận được sau khi gửi ngân hàng là: " + moneyafter + " triệu đồng");-->
+</script>
+
 </body>
 </html>
