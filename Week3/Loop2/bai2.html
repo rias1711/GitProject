@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào số nguyên dương cần tính giai thừa: "));
+    let tich = 1;
+    for (i = a; i > 0; i--) {
+        tich *= i;
+    }
+    document.write("Giai thừa của số " + a + "là " + tich);
+</script>
+</body>
+</html>
