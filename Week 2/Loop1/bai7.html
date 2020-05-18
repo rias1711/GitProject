@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 vòng lặp 1</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let count = 0;
+    let text = 0;
+    while (count < 100) {
+        if (a%3 == 0) {
+            if (a%5 == 0) {
+                document.write("FizzBuzz ");
+            }
+            else {
+                document.write("Fizz ");
+            }
+        } else if (a%5 == 0) {
+                document.write("Buzz ");
+        } else {
+            document.write(a + " ");
+        }
+        a++;
+        count++;
+    }
+</script>
+</body>
+</html>

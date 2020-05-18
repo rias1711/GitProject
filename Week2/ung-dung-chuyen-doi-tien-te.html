@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th> </th>
+    </tr>
+    <tr>
+        <th><input type="text" name="exchange" value=" " size="20" id="base"></th>
+        <th><select id="from">
+            <option value="22000">VietNam</option>
+            <option value="1">USD</option>
+            <option value="220">JPY</option>
+        </select></th>
+        <th><select id="to">
+            <option value="1">USD</option>
+            <option value="220">JPY</option>
+            <option value="22000">VietNam</option>
+        </select></th>
+        <th><button type="button" style="background-color: rebeccapurple; color: white" onclick="cV()">Convert</button></th>
+    </tr>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function cV() {
+        let a = parseInt(document.getElementById('from').value);
+        let b = parseInt(document.getElementById('to').value);
+        let c = parseInt(document.getElementById('base').value);
+        let d = c * b / a;
+        document.getElementById('result').innerText = "Result: " + d;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1 style="text-align: center">Caculator</h1>
+<form>
+    <input type="text" name="n1" value=" " size="20" id="n1">
+    <input type="text" name="n2" value=" " size="20" id="n2">
+    <br>
+    <br>
+    <button type="button" name="add" onclick="tong()">Addition(+)</button>
+    <button type="button" name="sub" onclick="hieu()">Subtraction(-)</button>
+    <button type="button" name="mul" onclick="tich()">Multiplication(x)</button>
+    <button type="button" name="div" onclick="thuong()">Division(/)</button>
+</form>
+<p id="result"></p>
+<script>
+    function tong() {
+        let a = parseFloat(document.getElementById('n1').value);
+        let b = parseFloat(document.getElementById('n2').value);
+        let tong;
+        tong = a + b;
+        document.getElementById('result').innerText = "Tổng hai số là: " + tong;
+    }
+    function hieu() {
+        let a = parseFloat(document.getElementById('n1').value);
+        let b = parseFloat(document.getElementById('n2').value);
+        let hieu;
+        hieu = a - b;
+        document.getElementById('result').innerText = "Hiệu hai số là: " + hieu;
+    }
+    function tich() {
+        let a = parseFloat(document.getElementById('n1').value);
+        let b = parseFloat(document.getElementById('n2').value);
+        let tich;
+        tich = a * b;
+        document.getElementById('result').innerText = "Tích hai số là: " + tich;
+    }
+    function thuong() {
+        let a = parseFloat(document.getElementById('n1').value);
+        let b = parseFloat(document.getElementById('n2').value);
+        let thuong;
+        thuong = a/b;
+        document.getElementById('result').innerText = "Thương hai số là: " + thuong;
+    }
+</script>
+</body>
+</html>
