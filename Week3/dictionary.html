@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" name="text" size="100" value=" " id="word">
+<button type="button" name="search" onclick="search()">Search</button>
+<p id="result"> Từ ... có nghĩa Tiếng Việt là </p>
+<script>
+    function search() {
+        let vietnamese = ["Chó", "Mèo", "Ngựa", "Chim", "Lợn"];
+        let english = ["Dog", "Cat", "Horse", "Bird", "Pig"];
+        for (i = 0; i <= 4; i++) {
+            let a = document.getElementById("word").value;
+            if (a == english[i]) {
+                document.getElementById("result").innerText = "Từ " + english[i] + " có nghĩa Tiếng Việt là " + vietnamese[i];
+                break;
+            } else {
+                document.getElementById("result").innerText = "Không tìm thấy từ này!";
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
