@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    let x = [];
+    for (i = 0; i < 10; i++) {
+        x[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i+1)));
+    }
+    x.sort(function (a, b) {
+        return a - b
+    });
+    document.write(x);
+</script>
+</body>
+</html>

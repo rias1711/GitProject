@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let a = [];
+    a.length = 10;
+    let b = [];
+    b.length = 10;
+    for (i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt("Nhập phần tử thứ " + (i+1) + " của mảng a"));
+    }
+    for (j = 0; j < b.length; j++) {
+        b[j] = parseInt(prompt("Nhập phần tử thứ " + (j+1) + " của mảng b"));
+    }
+    let c = b.concat(a);
+    document.write(c);
+</script>
+</body>
+</html>
