@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let check = false;
+    let input = prompt("Nhập vào tên chòm sao: ");
+    let d = call();
+    function call() {
+        for (let i = 0; i < a.length; i++) {
+            if (input == a[i]) {
+                alert("Chòm sao là: " + b[i]);
+                check = true;
+                break;
+            }
+        }
+        if (check == false) {
+            alert("Không tìm thấy chòm sao!");
+        }
+    }
+
+</script>
+</body>
+</html>
