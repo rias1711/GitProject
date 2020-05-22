@@ -2,23 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hàm kiểm tra số nguyên tố</title>
+    <title>Chuyển đổi giữa feet và meters</title>
 </head>
 <body>
-<table>
-    <tr>
-        <th>Feet</th>
-        <th>Meters</th>
-        <th>Meters</th>
-        <th>Feet</th>
-    </tr>
-</table>
+<form>
+    <label>Change Feet to Meters</label>
+    <input type="text" name="feetToMeters" value="" id="feetMeters">
+    <button type="button" name="changeFM" onclick="footToMeter()">Change</button>
+    <p id="resultFM"></p>
+    <br>
+    <label>Change Meters to Feet</label>
+    <input type="text" name="metersToFeet" value="" id="metersFeet">
+    <button type="button" name="changeMF" onclick="meterToFoot()">Change</button>
+    <p id="resultMF"></p>
+</form>
 <script>
-    function footToMeter(foot) {
-        meter = 0.305 * foot;
+    function footToMeter() {
+        let a = document.getElementById("feetMeters").value;
+        meter = 0.305 * a;
+        parseFloat(meter);
+        document.getElementById("resultFM").innerHTML = meter;
     }
-    function meterToFoot(meter) {
-        foot = 3.279 * meter;
+    function meterToFoot() {
+        let b = document.getElementById("metersFeet").value;
+        foot = 3.279 * b;
+        parseFloat(foot);
+        document.getElementById("resultMF").innerHTML = foot;
     }
 </script>
 </body>
