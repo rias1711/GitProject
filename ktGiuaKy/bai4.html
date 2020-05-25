@@ -11,10 +11,6 @@
         if ((i%3 == 0) || (i%7 == 0)) {
             document.write(i + ",");
             count++;
-        } else if ((i%21 == 0)) {
-            count--;
-        } else {
-            continue;
         }
     }
     document.write("<br>" + "Số lượng các số nguyên chia hết cho 3 hoặc 7 là : " + count);
