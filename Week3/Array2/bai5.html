@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 5</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [];
+    let b = [];
+    let check = false;
+    for (let i = 0; i < 5; i++) {
+        for (i = 0; i < 5; i++) {
+            a[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i+1) + " của mảng a"));
+            b[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i+1) + " của mảng b"));
+            if (a[i] === b[i]) check = true;
+             else check = false;
+        }
+        if (check) {
+            document.write("Hai chuỗi số giống nhau!");
+        } else {
+            document.write("Hai chuỗi số không giống nhau!");
+        }
+    }
+</script>
 </body>
 </html>

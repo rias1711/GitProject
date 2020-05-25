@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 3</title>
 </head>
 <body>
-$END$
+<script>
+    let str = prompt("Nhập vào một chuỗi");
+    let arr = str.split('');
+    let upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    let lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === upper[i]) {
+            arr[i] = lower[i];
+        } else if (arr[i] === lower[i]) {
+            arr[i] = upper[i];
+        }
+    }
+    document.write(arr.join(''));
+</script>
 </body>
 </html>

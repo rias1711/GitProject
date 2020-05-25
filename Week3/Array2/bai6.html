@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 6</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    arr.length = parseInt(prompt("Nhập độ dài chuỗi: "));
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt("Nhập vào phần tử thứ " + (i+1) + " của chuỗi")
+        if (arr[i] === "-") {
+            arr[i] = "_";
+        }
+    }
+    document.write(arr);
+</script>
 </body>
 </html>

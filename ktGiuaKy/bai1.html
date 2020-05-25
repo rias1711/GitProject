@@ -22,13 +22,13 @@
     }
     function show() {
         let number = document.getElementById("number").value;
-        let array = [2];
+        let list = 2;
         for ( let j = 3; j < number; j++){
             if(isChecked(j)){
-                array.push(j);
+                list += "," + j;
             }
         }
-        document.getElementById('result').innerHTML = array;
+        document.getElementById("result").innerHTML = list;
     }
 </script>
 </body>

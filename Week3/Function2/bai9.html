@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 9</title>
 </head>
 <body>
-$END$
+<script>
+    let a = ['a' , ',' , '6', '-2', '@', '@'];
+    let b = prompt("Nhập vào một ký tự bất kỳ");
+    let count = 0;
+    for (i = 0; i < a.length; i++) {
+        if (b == a[i]) {
+            count++;
+        }
+    }
+    if (count > 0) {
+        alert("Ký tự xuất hiện " + count + " lần");
+    } else alert("-1");
+</script>
 </body>
 </html>

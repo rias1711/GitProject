@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài4</title>
 </head>
 <body>
-$END$
+<script>
+    let a = ["apple", "orange", "blueberry", "apple", "blueberry", "apple"];
+    let b = prompt("Nhập từ cần tìm: ");
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (b == a[i]) count++;
+    }
+    alert("Từ cần tìm xuất hiện " + count + " lần");
+</script>
 </body>
 </html>

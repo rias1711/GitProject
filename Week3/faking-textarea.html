@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Faking Textarea on Typing</title>
 </head>
 <body>
-$END$
+<h1 style="text-align: center">Type anything slowly</h1>
+<form>
+    <textarea style="width: 100%; height: 400px" name="text" onkeydown="typeText()"></textarea>
+</form>
+<script>
+    let a = ['W', 'e', ' ', 'a', 'r', 'e', ' ', 'd', 'u', 'm', 'b', '!'];
+    function typeText() {
+        for (let i = 0; i < a.length; i++) {
+            let write = '';
+            write += a[i];
+            document.write(write);
+        }
+    }
+</script>
 </body>
 </html>

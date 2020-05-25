@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 7</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Nhập vào số thứ nhất"));
+    let b = parseInt(prompt("Nhập vào số thứ hai"));
+    let switchNum = switchTwo(a, b);
+    function switchTwo(num1, num2) {
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
+        document.write("Số thứ nhất " + num1 + "<br>");
+        document.write("Số thứ hai " + num2);
+    }
+</script>
 </body>
 </html>

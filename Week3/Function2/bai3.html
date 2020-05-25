@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 3</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Nhập vào số cần tìm giai thừa"));
+    let result = tinhGiaiThua(a);
+    function tinhGiaiThua(num) {
+        let giaiThua = 1;
+        while (num >= 2) {
+            giaiThua *= num * (num -1);
+            num = num - 2;
+        }
+        alert("Giai thừa của số " + a + " là " + giaiThua);
+    }
+</script>
 </body>
 </html>
