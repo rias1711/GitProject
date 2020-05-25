@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 1</title>
 </head>
 <body>
-$END$
+<form>
+    <label>Enter a number:</label>
+    <input type="text" name="text" size="20" id="number">
+    <button type="button" onclick="show()">Show</button><br>
+    <p id="result"></p>
+</form>
+<script>
+
+
+
+    function isChecked(num) {
+        let checked = true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                checked = false;
+                break;
+            }
+        }
+    }
+    function show() {
+        let count = document.getElementById("number").value;
+        let num = 2;
+        let j = 0;
+        while (j < count) {
+            if (isChecked(num)) {
+                document.getElementById("result").innerText = num + " ";
+                j++;
+            }
+        }
+        num++;
+    }
+</script>
 </body>
 </html>
