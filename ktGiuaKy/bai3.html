@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt("Nhập vào năm sinh: "));
+    let age = countAge(year);
+    alert("Năm nay bạn " + age + " tuổi");
+
+    function countAge(birthYear) {
+        let thisYear = 2020;
+        if (birthYear > thisYear) {
+            alert("Không hợp lệ");
+        } else {
+            return  thisYear - birthYear;
+        }
+    }
+</script>
+</body>
+</html>

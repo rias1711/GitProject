@@ -6,7 +6,22 @@
 </head>
 <body>
 <script>
+    let arr1 = [2, 4, 5, 7, 3, 3, 4];
+    let arr2 = [9, 2, 3, 1, 4, 3];
+    let sum1 = calSum(arr1);
+    document.write("Tổng mảng 1 là " + sum1 + "<br>");
+    let sum2 = calSum(arr2);
+    document.write("Tổng mảng 2 là " + sum2);
 
+    function calSum(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
 </script>
 </body>
 </html>
