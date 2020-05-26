@@ -5,7 +5,7 @@
     <title>Xây dựng lớp mô tả hình chữ nhật</title>
 </head>
 <body>
-<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #d3d3d3"></canvas>
+<canvas id="myCanvas" width="1368" height="768" style="border: 1px solid #d3d3d3"></canvas>
 <script>
     let Rectangle = function (length, width) {
         this.length = length;
@@ -23,7 +23,7 @@
             return length * width;
         }
     }
-    let rectangle = new Rectangle(6, 3);
+    let rectangle = new Rectangle(200, 100);
     let length = rectangle.getLength();
     let width = rectangle.getWidth();
     let perimeter = rectangle.getPerimeter();
@@ -32,10 +32,9 @@
 
     function creatRectangle() {
         let ctx = document.getElementById("myCanvas").getContext("2d");
-        let rectangle = new Rectangle(6, 3);
+        let rectangle = new Rectangle(200, 100);
         ctx.beginPath();
-        ctx.arc(rectangle.length, rectangle.width)
-        ctx.fill();
+        ctx.fillRect(90, 90, rectangle.length, rectangle.width);
     }
     creatRectangle();
 </script>
