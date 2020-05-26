@@ -7,15 +7,54 @@
 <body>
 <h2>Add New Product</h2>
 <form>
-    <input type="text" value="" placeholder="New Product" size="100">
-    <button type="button" name="add">Add</button>
+    <input type="text" value="" placeholder="New Product" size="100" id="newProduct">
+    <button type="button" onclick="addProduct()">Add</button>
     <br>
 </form>
-
-<h2>Display All Product</h2>
+<div>
+    <h2>Display All Product</h2>
+    <h3 id="products">Product Name</h3>
+</div>
 
 <script>
+    let array = [];
+    function addProduct() {
+        let product = document.getElementById("newProduct").value;
+        if (product == '') {
+            alert("Mời nhập lại!")
+        } else {
+            array.push(product);
+            display();
+            document.getElementById("newProduct").value = null;
+        }
+    }
 
+    function display() {
+        let text = "Product Name";
+        for (let i = 0; i < array.length; i++) {
+            let html = '<div id="'+'del'+i+'"><input type="text" id=' +
+                '"'+'num'+i+'" value="'+array[i]+'" readonly>' +
+                '<button type="button" onclick="edit('+i+')" >Edit</button>' +
+                '<button type="button" onclick="deleted('+i+')">Delete</button>' +
+                '</div>';
+            text += html;
+        }
+        document.getElementById('products').innerHTML = text;
+    }
+
+    function edit(num) {
+        let edits = prompt("Nhập nội dung cần sửa: ");
+        document.getElementById("num" + num).value = edits;
+    }
+
+    function deleted(num) {
+        document.getElementById("del" + num).remove();
+        for (let i = num; i < (array.length - 1); i++) {
+            array[i] = array[i+1];
+        }
+        array.pop();
+        display();
+    }
 </script>
 </body>
 </html>
