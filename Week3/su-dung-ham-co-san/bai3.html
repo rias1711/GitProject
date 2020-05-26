@@ -7,17 +7,17 @@
 <body>
 <script>
     let str = prompt("Nhập vào một chuỗi");
-    let arr = str.split('');
-    let upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    let lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === upper[i]) {
-            arr[i] = lower[i];
-        } else if (arr[i] === lower[i]) {
-            arr[i] = upper[i];
-        }
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (upper.indexOf(str[i]) !== -1) {
+            result.push(str[i].toLowerCase());
+        } else if (lower.indexOf(str[i]) !== -1) {
+            result.push(str[i].toUpperCase());
+        } else result.push(str[i]);
     }
-    document.write(arr.join(''));
+    document.write(result.join(''));
 </script>
 </body>
 </html>
