@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    let Apple = function () {
+        this.weight = 10;
+
+        this.getWeight = function () {
+            return this.weight;
+        }
+
+        this.decreaseApple = function () {
+            if (this.weight > 0) {
+                this.weight--;
+            }
+
+        }
+        this.isEmpty = function () {
+                return false;
+            }
+    }
+
+    let Human = function () {
+        this.name = "";
+        this.gender = true;
+        this.weight = 0;
+
+        this.getName = function () {
+            return name;
+        };
+
+        this.isMale = function () {
+            return this.gender;
+        };
+
+        this.setGender = function () {
+            this.gender = gender;
+        };
+
+        this.checkApple = function (apple) {
+            return apple.weight > 0;
+        };
+        this.eat = function (apple) {
+            if (this.checkApple(apple)) {
+                this.weight++;
+                apple.decreaseApple();
+            }
+        };
+        this.say = function (say) {
+            alert(this.name + " nói: " + say);
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.setName = function (name) {
+            this.name = name;
+            return this.name;
+        };
+
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.setWeight = function (weight) {
+            this.weight = weight;
+            return this.weight;
+        }
+    }
+
+    let apple = new Apple();
+    console.log("Apple: " + apple.weight);
+
+    let adam = new Human();
+    adam.setName("Adam");
+    adam.setWeight(70);
+    adam.getWeight();
+    adam.say("Want to eat apple?");
+    adam.eat(apple);
+    adam.eat(apple);
+    console.log("Adam's weight: " + adam.getWeight());
+    console.log("Apple: " + apple.getWeight());
+
+    let eva = new Human();
+    eva.setName("Eva");
+    eva.setWeight(50);
+    eva.getWeight();
+    eva.say("Ok. Thanks!");
+    eva.eat(apple);
+    console.log("Eva's weight: " + eva.getWeight());
+    console.log("Apple: " + apple.getWeight());
+</script>
+</body>
+</html>
