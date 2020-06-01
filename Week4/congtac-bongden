@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button type="button" name="turnOn" onclick="button.switchOn()">Turn On</button>
+<button type="button" name="turnOff" onclick="button.switchOff()">Turn Off</button>
+<script>
+let ElectricLamp = function() {
+	this.status = status;
+	this.turnOff = function() {
+		status = false;
+	}
+	this.turnOn = function() {
+		status = true;
+	}
+}
+
+let SwitchButton = function() {
+	this.status = status;
+	this.lamp = null;
+	this.connectToLamp = function(electricLamp) {
+		this.lamp = electricLamp;
+	}
+	this.switchOff = function() {
+		status = false;
+		alert("Tắt đèn");
+		console.log(lamp.status);
+	}
+	this.switchOn = function() {
+		status = true;
+		alert("Bật đèn");
+		console.log(lamp.status);
+	}
+}
+
+let lamp = new ElectricLamp();
+let button = new SwitchButton();
+
+</script>
+</body>
+</html>
