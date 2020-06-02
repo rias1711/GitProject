@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Công tắc và bóng đèn</title>
 </head>
 <body>
-$END$
+<script>
+    let SwitchButton = function () {
+        this.status = true;
+
+        this.connectToLamp = function () {
+
+        }
+    }
+
+    let ElectricLamp = function () {
+        this.status = true;
+
+        this.turnOff = function () {
+            this.status = false;
+            alert("Tắt đèn");
+        }
+
+        this.turnOn = function () {
+            this.status = true;
+            alert("Bật đèn");
+        }
+    }
+</script>
 </body>
 </html>
