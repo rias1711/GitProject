@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(num) {
+        let arrFibonacci = [1,1];
+        let result = false;
+        for (let i = 2; i <= num; i++) {
+            let condition = num === arrFibonacci[i];
+            arrFibonacci[i] = arrFibonacci[i-2] + arrFibonacci[i-1];
+            arrFibonacci.push(arrFibonacci[i]);
+            if (condition) {
+                result = true;
+            } else {
+                result = false;
+            }
+        }
+        return result;
+    }
+    // console.log(isFibonacci(6));
+</script>
+</body>
+</html>
